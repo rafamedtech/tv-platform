@@ -7,7 +7,8 @@ const items = [
 </script>
 
 <template>
-  <section class="min-h-dvh min-w-dvh h-dvh flex items-center justify-center">
+  <section class="min-h-dvh h-screen min-w-dvh flex items-center justify-center relative">
+    <FullscreenButton />
     <UCarousel
       v-slot="{ item }"
       loop
