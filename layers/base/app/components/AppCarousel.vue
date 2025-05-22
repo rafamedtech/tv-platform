@@ -7,15 +7,15 @@ const items = [
 </script>
 
 <template>
-  <section class="min-h-dvh h-dvh flex items-center justify-center w-dvh">
+  <section class="min-h-dvh min-w-dvh h-dvh flex items-center justify-center">
     <UCarousel
       v-slot="{ item }"
       loop
       :autoplay="{ delay: 5000 }"
       :items="items"
-      :ui="{ item: 'basis-[100%]', root: 'h-full' }"
+      :ui="{ item: 'basis-[100%]', root: 'h-full w-full' }"
     >
-      <img :src="item" class="rounded-lg h-screen object-cover" />
+      <img :src="item" class="w-full" />
     </UCarousel>
   </section>
 </template>
