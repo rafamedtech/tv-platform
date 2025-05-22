@@ -7,16 +7,10 @@ const items = [
 </script>
 
 <template>
-  <section class="min-h-dvh h-screen min-w-dvh flex items-center justify-center relative">
-    <FullscreenButton />
-    <UCarousel
-      v-slot="{ item }"
-      loop
-      :autoplay="{ delay: 5000 }"
-      :items="items"
-      :ui="{ item: 'basis-[100%]', root: 'h-full w-full' }"
-    >
-      <img :src="item" class="w-full" />
+  <section class="flex items-center justify-center">
+    <!-- <FullscreenButton /> -->
+    <UCarousel v-slot="{ item }" loop :autoplay="{ delay: 5000 }" :items="items">
+      <img :src="item" />
     </UCarousel>
   </section>
 </template>

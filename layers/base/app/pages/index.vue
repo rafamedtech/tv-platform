@@ -1,5 +1,5 @@
 <template>
-  <main class="flex justify-center">
+  <main>
     <AppCarousel />
   </main>
 </template>
