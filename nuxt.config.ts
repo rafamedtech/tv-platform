@@ -7,5 +7,5 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
-  modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/image', '@nuxt/ui'],
+  modules: ['@nuxt/eslint'],
 });
